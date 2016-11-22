@@ -1,0 +1,224 @@
+/* code adapted from Steven Paling */
+
+html, body {
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'Bentham', serif;
+    font-size: 0.9em;
+}
+
+h2 {
+    font-family: 'Lobster', sans-serif;
+}
+
+.byline {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 125%;
+}
+
+.spacer{
+    height:58px;
+    width:100%;
+}
+
+
+
+/* code adapted from http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+.anchor {
+    display: block;
+    position: relative;
+    top: -24em;
+    visibility: hidden;
+}
+
+.image_box {
+    border: solid 1px #bcbcbc;
+    max-width: 900px;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    padding-top: .25em;
+}
+
+.image_box > img {
+    display: block;
+    margin: auto;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing: 0;
+    font-family: 'Bentham', sans-serif;
+    margin: 0px auto;
+    margin-top: 1.5em;
+}
+
+tr td:first-child {
+    padding-right: 2em;
+}
+
+tr td:not(:first-child) {
+    border-bottom: solid 1px #abd9e9;
+    padding-right: 3em;
+    padding-left: 3em;
+    text-align: center;
+}
+
+th {
+    border-bottom: solid 3px #2c7bb6;
+}
+
+td {
+    padding: 0.5em;
+}
+
+caption {
+    caption-side: bottom;
+    /* font-size: 1.25em; */
+    margin-top: 1em;
+}
+
+.caption {
+    background-color: lightblue;
+    font-family: 'Bentham', sans-serif;
+    margin-left: 5%;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    text-align: center;
+    width: 90%;
+}
+
+
+/* styling by secton */
+#top {
+    background-color: #ffffff;
+    height: 20em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#banner {
+    top:0;
+    background-color:orange;
+    color: brown;
+    height: 5em;
+    width: 100%;
+}
+
+h2 > img {
+    float: right;
+    margin-left: 0.25em;
+    vertical-align: baseline;
+}
+
+
+#banner > h1 {
+    /* border: solid 1px white; */
+    font-family: 'Lobster';
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    max-width: 960px;
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+#global_navprime {
+    background-color: #ffffff;
+    font-family: 'Bentham';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0.25em;
+    margin-right: auto;
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    max-width: 1015px;
+}
+#global_nav {
+    background-color: #ffffff;
+    border-bottom: solid 2px orange;
+    font-family: 'Bentham', serif;
+    font-size: 1.25em;
+    height: 260px;
+    margin-top: 0.5em;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    max-width: 1015px;;
+}
+
+#global_nav a:link {
+    color: #000000;
+}
+
+#global_nav a:hover {
+    color: #2c7bb6;
+}
+
+.nav_span {
+    font-family:'Bentham', serif;
+    margin-right: 1px;
+}
+
+.nav_span a {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+}
+
+#content {
+    /* border: solid 1px red; */
+    margin-top: 23em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+
+#center {
+    /* background-color: beige; */
+    display: inline-block;
+    width: 100%;
+}
+
+#center > h1 {
+    font-size: 2.25em;
+    margin-bottom: 0;
+}
+
+#center > h2 {
+    font-size: 1.25em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#center > p {
+    margin-top: 0;
+}
+
+#fun_image, #market_image, #food_image, #craft_image {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#fun_image.fadeOut, #market_image.fadeOut, #food_image.fadeOut, #craft_image.fadeOut {
+    opacity:0;
+}
+
