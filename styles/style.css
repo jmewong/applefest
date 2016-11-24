@@ -40,7 +40,7 @@ p {
 .anchor {
     display: block;
     position: relative;
-    top: -24em;
+    top: -28em;
     visibility: hidden;
 }
 
@@ -105,7 +105,6 @@ caption {
 /* styling by secton */
 #top {
     background-color: #ffffff;
-    height: 20em;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -185,7 +184,7 @@ h2 > img {
 
 #content {
     /* border: solid 1px red; */
-    margin-top: 23em;
+    margin-top: 27em;
     margin-right: auto;
     margin-left: auto;
     max-width: 960px;
