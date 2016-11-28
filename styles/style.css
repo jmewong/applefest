@@ -1,3 +1,5 @@
+/*****Desktop***************************************/
+/***************************************************/
 /* code adapted from Steven Paling */
 
 html, body {
@@ -137,28 +139,43 @@ h2 > img {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
+
 #global_navprime {
-    background-color: #ffffff;
-    font-family: 'Bentham';
-    font-size: 2em;
+    background-color: brown;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
     text-align: center;
-    margin-top: 0.25em;
-    margin-right: auto;
     margin-bottom: 0.25em;
-    margin-left: auto;
-    max-width: 1015px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+#global_navprime a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#global_navprime a:hover {
+    color: orange;
 }
 #global_nav {
     background-color: #ffffff;
     border-bottom: solid 2px orange;
     font-family: 'Bentham', serif;
     font-size: 1.25em;
-    height: 260px;
+    height: 200px;
     margin-top: 0.5em;
     margin-right: auto;
     margin-bottom: 0.5em;
     margin-left: auto;
     max-width: 1015px;;
+}
+
+#global_nav img {
+    height: 190px;
+    width: 190px;
 }
 
 #global_nav a:link {
@@ -225,8 +242,8 @@ h2 > img {
 .imgdiv {
     position: relative;
     display: inline-block;
-    height: 250px;
-    width: 197px;
+    height: 190px;
+    width: 190px;
 }
 
 .imgdesc {
