@@ -1,5 +1,3 @@
-/*****Desktop***************************************/
-/***************************************************/
 /* code adapted from Steven Paling */
 
 html, body {
@@ -11,7 +9,6 @@ html, body {
     font-size: 100%;
 }
 
-
 body {
     background-color: #ffffff;
     font-family: 'Bentham', serif;
@@ -22,87 +19,17 @@ h2 {
     font-family: 'Quicksand', sans-serif;
 }
 
-.byline {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 p {
     font-size: 125%;
 }
-
-.spacer{
-    height:58px;
-    width:100%;
-}
-
-
 
 /* code adapted from http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
 .anchor {
     display: block;
     position: relative;
-    top: -23em;
+    top: -25em;
     visibility: hidden;
 }
-
-.image_box {
-    border: solid 1px #bcbcbc;
-    max-width: 900px;
-    margin-right: auto;
-    margin-bottom: 1em;
-    margin-left: auto;
-    padding-top: .25em;
-}
-
-.image_box > img {
-    display: block;
-    margin: auto;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing: 0;
-    font-family: 'Bentham', sans-serif;
-    margin: 0px auto;
-    margin-top: 1.5em;
-}
-
-tr td:first-child {
-    padding-right: 2em;
-}
-
-tr td:not(:first-child) {
-    border-bottom: solid 1px #abd9e9;
-    padding-right: 3em;
-    padding-left: 3em;
-    text-align: center;
-}
-
-th {
-    border-bottom: solid 3px #2c7bb6;
-}
-
-td {
-    padding: 0.5em;
-}
-
-caption {
-    caption-side: bottom;
-    /* font-size: 1.25em; */
-    margin-top: 1em;
-}
-
-.caption {
-    background-color: lightblue;
-    font-family: 'Bentham', sans-serif;
-    margin-left: 5%;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    text-align: center;
-    width: 90%;
-}
-
 
 /* styling by secton */
 #top {
@@ -115,57 +42,55 @@ caption {
 #banner {
     top:0;
     background-color:brown;
-    color: yellow;
-    height: 5em;
+    color: lemonchiffon;
+    height: 5.8em;
     width: 100%;
 }
 
-h2 > img {
-    float: right;
-    margin-left: 0.25em;
-    vertical-align: baseline;
-}
-
-
-#banner > h1 {
-    /* border: solid 1px white; */
+#banner_left {
     font-family: 'Quicksand';
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    max-width: 960px;
-    text-align: center;
+    font-size: 2.5em;
+    text-align: left;
+    margin-left: 2em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
 
-#global_navprime {
-    background-color: brown;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 0.2em;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+#banner_right {
+    font-family: 'Bentham';
+    font-size: 1.3em;
+    margin-right: 3.4em;
+    text-align: right;
+    margin-top: -2.5em;
 }
 
-#global_navprime a {
-    color: white;
+#banner_right > a {
+    color: lemonchiffon;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+#banner_right > a:link {
+    color: brown;
     text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
-#global_navprime a:hover {
-    color: yellow;
+#banner_right > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
-#global_nav {
+
+#images_nav img {
+    height: 250px;
+    width: 250px;
+}
+
+#images_nav {
     background-color: #ffffff;
-    border-bottom: solid 2px yellow;
+    border-bottom: solid 2px lemonchiffon;
     font-family: 'Bentham', serif;
     font-size: 1.25em;
-    height: 200px;
+    height: 260px;
     margin-top: 0.5em;
     margin-right: auto;
     margin-bottom: 0.5em;
@@ -173,61 +98,11 @@ h2 > img {
     max-width: 1015px;;
 }
 
-#global_nav img {
-    height: 190px;
-    width: 190px;
-}
-
-#global_nav a:link {
-    color: #000000;
-}
-
-#global_nav a:hover {
-    color: #2c7bb6;
-}
-
-.nav_span {
-    font-family:'Bentham', serif;
+#images_nav > a {
     margin-right: 1px;
-}
-
-.nav_span a {
     text-decoration: none;
 }
 
-#container {
-    width: 100%;
-}
-
-#content {
-    /* border: solid 1px red; */
-    margin-top: 23em;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 960px;
-}
-
-
-#center {
-    /* background-color: beige; */
-    display: inline-block;
-    width: 100%;
-}
-
-#center > h1 {
-    font-size: 2.25em;
-    margin-bottom: 0;
-}
-
-#center > h2 {
-    font-size: 1.25em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-
-#center > p {
-    margin-top: 0;
-}
 
 #fun_image, #market_image, #food_image, #craft_image {
     opacity:1;
@@ -242,8 +117,8 @@ h2 > img {
 .imgdiv {
     position: relative;
     display: inline-block;
-    height: 190px;
-    width: 190px;
+    height: 250px;
+    width: 250px;
 }
 
 .imgdesc {
@@ -255,9 +130,10 @@ h2 > img {
     margin-bottom: 0;
     bottom: 0;
     background: rgba(255, 153, 0, 0.72);
-    color: #fff;
-    text-indent: 2px;
-    font-size: 1em;;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 250px;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility opacity 0.2s;
@@ -266,4 +142,31 @@ h2 > img {
 .imgdiv:hover .imgdesc {
     visibility: visible;
     opacity: 1;
+}
+
+#container {
+    width: 100%;
+}
+
+#content {
+    margin-top: 24em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+#center {
+    /* background-color: beige; */
+    display: inline-block;
+    width: 100%;
+}
+
+#center > h2 {
+    font-size: 1.25em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#center > p {
+    margin-top: 0;
 }

@@ -48,6 +48,24 @@ function slideShow() {
     setTimeout(slideShow, imgDuration);
 }
 
-/* after the page is loaded for 10 seconds, start the images slide show */
-setTimeout(slideShow, imgDuration);
+$(document).ready(function() {
+
+    /* after the page is loaded for 10 seconds, start the images slide show */
+    setTimeout(slideShow, imgDuration);
+
+    /* when an <a> tag is clicked, hide all the center_* divs except the one with id "center_<a tag's id>" */
+    /* e.g. When <a id="fun"> tag is clicked, only show the "center_fun" div and hide the rest */
+    $("a").click(function(event) {
+
+        /* hide all the center_* divs */
+        $("#center > div").hide();
+
+        /* only show the center_<a tag's id> div based on the id of the link/image just got clicked */
+        $("#center_" + this.id).show();
+    });
+    
+    /* trigger the 'About' link click so when page is first loaded, only the 'center_about' div is displayed */
+    $("#about").trigger("click");
+});
+
 
