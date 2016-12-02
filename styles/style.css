@@ -23,6 +23,33 @@ p {
     font-size: 125%;
 }
 
+table {
+    border-spacing: 0em;
+    float: left;
+    font-family: 'Bentham', serif;
+    margin-right: 2.3em;
+    margin-bottom: 2em;
+}
+
+th {
+    border-bottom: solid 1px black;
+    padding: 0.5em;
+}
+
+tr:nth-child(2) td {
+    border-bottom: solid 1px black;
+    font-size: 1em;
+    font-weight:bold;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    max-width: 8.2em;
+    padding: 0.5em;
+    text-align: center;
+}
+
 /* code adapted from http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
 .anchor {
     display: block;
