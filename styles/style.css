@@ -1,10 +1,28 @@
 /******Tablet**************************************/
 /**************************************************/
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    #content {
-        margin-top: 28em !important;
-        max-width: 80% !important;
+
+@media screen and (min-width:768px) and (max-width:1014px) {
+
+    #images_nav {
+        height: 195px !important;
+        width: 768px !important;
     }
+
+    .imgdiv {
+        height: 189px !important;
+        width: 189px !important;
+    }
+
+    .imgdesc {
+        font-size: 1em !important;
+        line-height: 189px !important;
+    }
+
+    #content {
+        margin-top: 21em !important;
+        width: 700px !important;
+    }
+
 }
 
 /*****Phone*****************************************/
@@ -17,7 +35,7 @@
         float: none !important;
         margin: auto !important;
         padding-bottom: 1em;
-    }s
+    }
     #images_nav {
         border-bottom: solid 2px lemonchiffon;
         font-size: 1.25em;
@@ -144,14 +162,6 @@ td {
     text-align: center;
 }
 
-/* code adapted from http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
-.anchor {
-    display: block;
-    position: relative;
-    top: -25em;
-    visibility: hidden;
-}
-
 /* styling by secton */
 #top {
     background-color: #ffffff;
@@ -182,7 +192,7 @@ td {
     font-size: 1.3em;
     margin-right: 3.4em;
     text-align: right;
-    margin-top: -2.5em;
+    margin-top: -1.2em;
 }
 
 #banner_right > a {
@@ -201,11 +211,6 @@ td {
     text-decoration: underline;
 }
 
-#images_nav img {
-    max-height: 250px;
-    width: 250px;
-}
-
 #images_nav {
     background-color: #ffffff;
     border-bottom: solid 2px lemonchiffon;
@@ -216,7 +221,13 @@ td {
     margin-right: auto;
     margin-bottom: 0.5em;
     margin-left: auto;
-    max-width: 1015px;
+    width: 1015px;
+    white-space: nowrap;
+}
+
+#images_nav img {
+    max-height: 100%;
+    width: 100%;
 }
 
 #images_nav > a {
@@ -242,8 +253,8 @@ td {
 .imgdiv {
     position: relative;
     display: inline-block;
-    max-height: 250px;
-    max-width: 250px;
+    height: 250px;
+    width: 250px;
 }
 
 .imgdesc {
@@ -274,7 +285,7 @@ td {
 }
 
 #content {
-    margin-top: 24em;
+    margin-top: 26em;
     margin-right: auto;
     margin-left: auto;
     max-width: 960px;
